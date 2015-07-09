@@ -1,4 +1,4 @@
-![CRIkit_Logo.png](https://bitbucket.org/repo/aA4eg6/images/4223592632-CRIkit_Logo.png)
+![CRIkit_Logo.png](https://github.com/CoherentRamanNIST/CRIkit/blob/master/CRIkit_Logo.png)
 
 The Coherent Raman Imaging toolKit
 
