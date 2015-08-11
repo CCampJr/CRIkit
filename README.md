@@ -16,14 +16,12 @@ These represent but a small fraction of our developed software. For more informa
 
 ###Setup###
 
-####MATLAB####: Download source code to a folder and add to MATLAB path via "Set Path"
+MATLAB: Download source code to a folder and add to MATLAB path via "Set Path"
 
-####Python####: Download source code to a folder. Note: there is a IPython Notebook with the Python code. You may wish to place this
+Python: Download source code to a folder. Note: there is a IPython Notebook with the Python code. You may wish to place this
 in your local IPython notebook folder for easy accessibility.
 
-###Configuration###: None (that we know of)
-
-Dependencies
+###Dependencies###
 
 MATLAB: MATLAB 2013a or newer (it may work on older versions as well).
 
