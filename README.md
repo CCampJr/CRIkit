@@ -6,7 +6,7 @@ Version: 1.0
 
 # README #
 
-Summary
+###Summary ###
 The CRIKit package offers utility methods for pre-processing coherent Raman spectral data. Currently,
 this package contains a few key componenets:
 * Phase retrieval via the Kramers-Kronig relation
@@ -14,14 +14,14 @@ this package contains a few key componenets:
 
 These represent but a small fraction of our developed software. For more information, see the contact info below.
 
-Setup
+###Setup###
 
-MATLAB: Download source code to a folder and add to MATLAB path via "Set Path"
+####MATLAB####: Download source code to a folder and add to MATLAB path via "Set Path"
 
-Python: Download source code to a folder. Note: there is a IPython Notebook with the Python code. You may wish to place this
+####Python####: Download source code to a folder. Note: there is a IPython Notebook with the Python code. You may wish to place this
 in your local IPython notebook folder for easy accessibility.
 
-Configuration: None (that we know of)
+###Configuration###: None (that we know of)
 
 Dependencies
 
