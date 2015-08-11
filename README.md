@@ -10,17 +10,24 @@ Summary
 The CRIKit package offers utility methods for pre-processing coherent Raman spectral data. Currently,
 this package contains a few key componenets:
 * Phase retrieval via the Kramers-Kronig relation
-* Asymmetric least square baseline detrending
+* Asymmetric least square baseline detrending (Python-only, temporarily)
+
+These represent but a small fraction of our developed software. For more information, see the contact info below.
 
 Setup
 
-Configuration
+MATLAB: Download source code to a folder and add to MATLAB path via "Set Path"
+
+Python: Download source code to a folder. Note: there is a IPython Notebook with the Python code. You may wish to place this
+in your local IPython notebook folder for easy accessibility.
+
+Configuration: None (that we know of)
 
 Dependencies
 
-How to run tests
+MATLAB: MATLAB 2013a or newer (it may work on older versions as well).
 
-Deployment instructions
+Python: (REQUIRED) Python >= 3.4; Numpy, SciPy. (RECOMMENDED) PyFFTW, CVXOPT (BETTER) or scikits.sparse.
 
 ### NONLICENSE ###
 This software was developed at the National Institute of Standards and Technology (NIST) by
