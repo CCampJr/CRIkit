@@ -7,6 +7,10 @@ Version: 1.0
 # README #
 
 Summary
+The CRIKit package offers utility methods for pre-processing coherent Raman spectral data. Currently,
+this package contains a few key componenets:
+* Phase retrieval via the Kramers-Kronig relation
+* Asymmetric least square baseline detrending
 
 Setup
 
@@ -31,6 +35,11 @@ to perform technology transfer and collaboration. In no case does such identific
 recommendation or endorsement by the National Institute of Standards and Technology, nor
 does it imply that the products identified are necessarily the best available for the
 purpose.
+
+### CITATION ###
+C. H. Camp Jr., Y. J. Lee, and M. T. Cicerone, "Quantitative, Comparable Coherent Anti-Stokes Raman Scattering
+(CARS) Spectroscopy: Correcting Errors in Phase Retrieval," (2015). arXiv:1507.06543.
+
 
 ### Contact ###
 Charles H Camp Jr: [charles.camp@nist.gov](mailto:charles.camp@nist.gov)
