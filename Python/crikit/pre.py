@@ -31,7 +31,7 @@ __all__ = ['kkrelation','hilbertfft']
 _DEFAULT_THREADS = 1
 
 import numpy as _np
-import scipy as _scipy
+
 ## Conditional modules
 # Check for and load pyFFTW if available (kkrelation, hilbertfft)
 try:
@@ -212,7 +212,7 @@ def hilbertfft(spectral_data, pad_factor=1):
 
     # time_vec keeps track of positive and negative time in the
     # Fourier-domain
-    time_vec = _np.linspace(-1, 1, spectrum_len+2*spectrum_len*pad_factor)
+    time_vec = _np.fft.fftfreq(spectral_data_pad.shape[0])
     time_vec = time_vec[:, _np.newaxis, _np.newaxis]
 
     # Hilbert transformed data (padded)
@@ -231,11 +231,13 @@ def hilbertfft(spectral_data, pad_factor=1):
         spectral_data_pad = spectral_data
 
     # Perform Hilbert Transform with FFTW if available
+    # Hilbert{f(w)} = FFT{i*sgn(t) * iFFT{f(w)}}
+
     if _pyfftw_available == True:
         _pyfftw.interfaces.cache.enable()
         hilbert_spectral_data_pad = 1j*\
-        _np.real(_pyfftw.interfaces.scipy_fftpack.ifft(1j*\
-        _np.sign(time_vec)*_pyfftw.interfaces.scipy_fftpack.fft(\
+        _np.real(_pyfftw.interfaces.scipy_fftpack.fft(1j*\
+        _np.sign(time_vec)*_pyfftw.interfaces.scipy_fftpack.ifft(\
         spectral_data_pad, axis=0, overwrite_x=True, \
         threads=_thread_num, auto_align_input=True, \
         planner_effort='FFTW_MEASURE'), axis=0, \
@@ -243,8 +245,8 @@ def hilbertfft(spectral_data, pad_factor=1):
         auto_align_input=True, planner_effort='FFTW_MEASURE'))
     else: # Perform Hilbert Transform with Scipy FFTPACK
         hilbert_spectral_data_pad = 1j*\
-        _np.real(_fftpack.ifft(1j*_np.sign(time_vec)*\
-        _fftpack.fft(spectral_data_pad, axis=0, \
+        _np.real(_fftpack.fft(1j*_np.sign(time_vec)*\
+        _fftpack.ifft(spectral_data_pad, axis=0, \
         overwrite_x=True), axis=0, overwrite_x=True))
 
     # Return data with the same dimensionality as the original
