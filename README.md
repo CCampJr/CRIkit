@@ -2,7 +2,7 @@
 
 The Coherent Raman Imaging toolKit
 
-Version: 1.0
+Version: 1.01
 
 # README #
 
@@ -10,7 +10,8 @@ Version: 1.0
 The CRIKit package offers utility methods for pre-processing coherent Raman spectral data. Currently,
 this package contains a few key componenets:
 * Phase retrieval via the Kramers-Kronig relation
-* Asymmetric least square baseline detrending (Python-only, temporarily)
+* Asymmetric least square baseline detrending
+* Asymmetric reweighted penalized least squares
 
 These represent but a small fraction of our developed software. For more information, see the contact info below.
 
@@ -43,7 +44,7 @@ purpose.
 
 ### CITATION ###
 C. H. Camp Jr., Y. J. Lee, and M. T. Cicerone, "Quantitative, Comparable Coherent Anti-Stokes Raman Scattering
-(CARS) Spectroscopy: Correcting Errors in Phase Retrieval," (2015). arXiv:1507.06543.
+(CARS) Spectroscopy: Correcting Errors in Phase Retrieval," Journal of Raman Spectroscopy (2015). arXiv:1507.06543.
 
 
 ### Contact ###
