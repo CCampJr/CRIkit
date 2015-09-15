@@ -26,7 +26,7 @@
 %%%     CITATION: C. H. Camp Jr., Y. J. Lee, and M. T. Cicerone, 
 %%%         "Quantitative, Comparable Coherent Anti-Stokes Raman Scattering
 %%%         (CARS) Spectroscopy: Correcting Errors in Phase Retrieval,"
-%%%         (2015). arXiv:1507.06543.
+%%%         Journal of Raman Spectroscopy (2015). arXiv:1507.06543.
 %%%
 %%%     Charles H Camp Jr (charles.camp@nist.gov, ccampjr@gmail.com)
 %%%         v0: 9/11/2014
