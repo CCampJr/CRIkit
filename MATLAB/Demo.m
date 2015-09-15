@@ -10,7 +10,7 @@
 %%%     Savitky-Golay filter.
 %%%
 %%%     NOTE: this is an un-optimized demo, just meant for demonstrative
-%%%     purposed. Varying parameters (e.g., detrending params) will likely
+%%%     purposes. Varying parameters (e.g., detrending params) will likely
 %%%     produce better results.
 %%%
 %%%     Required additional functions: MyHilbert.m, asLS_baseline_v1.m,
