@@ -6,7 +6,7 @@ Spectral Pre-Processing Tools (CRIKit.pre)
 
     kkrelation : Retrieve real and imaginary components from a
     spectrum that is the modulus of a function\n
-    
+
     hilbertfft : Fourier-domain Hilbert transform\n
 
 Citation Reference
@@ -71,10 +71,10 @@ def kkrelation(ref_spectral_data, cri_spectral_data, phase_offset=0.0,
         or three-dimensional
     cri_spectral_data : ndarray
         CRI spectra(um) array that can be one-,two-,or three-dimensional
-    phase_offset : int, float, or ndarray, optional
+    (phase_offset) : int, float, or ndarray, optional
         Global phase offset applied to the KK, which effecively controls
         the real-to-imaginary components relationship
-    norm_by_ref_flag : bool
+    (norm_by_ref_flag) : bool
         Should the output be normalized by the square-root of the
         reference NRB spectrum(a)
 
@@ -155,7 +155,7 @@ def hilbertfft(spectral_data, pad_factor=1):
     ----------
     spectral_data : ndarray
         Input array that can be one-,two-,or three-dimensional
-    pad_factor : int, optional
+    (pad_factor) : int, optional
         The multiple number of spectral_data-length pads that will be
         applied before and after the original spectra
 
@@ -192,7 +192,7 @@ def hilbertfft(spectral_data, pad_factor=1):
     @version: ("0.1.1")\n
     """
 
-    
+
 
     # Find dimensionality. Computations always performed in 3D.
     # Return is of same size of input.
