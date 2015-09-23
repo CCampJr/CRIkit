@@ -2,7 +2,7 @@
 
 The Coherent Raman Imaging toolKit
 
-Version: 1.01
+Version: 1.02
 
 # README #
 
