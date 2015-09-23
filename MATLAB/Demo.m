@@ -68,7 +68,7 @@ I_NRB = abs(CHI_NR).^2;
 
 [KK_ideal_imag, KK_ideal_real] = KKHilbert(I_NRB, I_CARS);
 KK_ideal = KK_ideal_real + j*KK_ideal_imag;
-phase_ideal = phase(KK_ideal);
+phase_ideal = angle(KK_ideal);
 
 figure
 plot(WN,I_CARS);
@@ -94,7 +94,7 @@ I_REF = I_NRB.*(1.*exp(-(WN-1400).^2./(2000.^2)));
 [KK_ref_imag, KK_ref_real] = KKHilbert(I_REF, I_CARS);
 
 KK_ref = KK_ref_real + j*KK_ref_imag;
-phase_ref = phase(KK_ref);
+phase_ref = angle(KK_ref);
 
 figure
 plot(WN,I_REF)
