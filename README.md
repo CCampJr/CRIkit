@@ -2,7 +2,7 @@
 
 The Coherent Raman Imaging toolKit
 
-Version: 1.02
+**NOTE**: This Repository is no longer maintained. Please visit: https://github.com/CCampJr/crikit2 for CRIkit2
 
 # README #
 
