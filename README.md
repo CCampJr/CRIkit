@@ -1,6 +1,6 @@
-# Please go to CRIkit2: https://github.com/CoherentRamanNIST/crikit2 #
+# Please go to CRIkit2: https://github.com/CCampJr/crikit2 #
 
-![CRIkit_Logo.png](https://github.com/CoherentRamanNIST/CRIkit/blob/master/CRIkit_Logo.png)
+![CRIkit_Logo.png](https://github.com/CCampJr/CRIkit/blob/master/CRIkit_Logo.png)
 
 The Coherent Raman Imaging toolKit
 
